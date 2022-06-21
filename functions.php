@@ -1,4 +1,5 @@
 <?php
+
 /**
  * ProfitIsle functions and definitions
  *
@@ -147,8 +148,8 @@ add_action('widgets_init', 'profit_isle_widgets_init');
 function profit_isle_scripts()
 {
     //	Bootstrap
-    wp_enqueue_style('parent-twitter-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css", array(), "5.0.2");
-    wp_enqueue_script('parent-twitter-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js", array('jquery'), "5.0.2", true);
+    wp_enqueue_style('parent-twitter-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css", array(), "5.0.2");
+    wp_enqueue_script('parent-twitter-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js", array('jquery'), "5.0.2", true);
 
 
     wp_enqueue_style('profit-isle-header-style', get_template_directory_uri() . '/css/header.css', array(), _PRI_VERSION);

@@ -18,7 +18,7 @@ if (!class_exists('PROFITBakeryElements')) {
 
 			//Custom Fields
 			$fieldsPaths = [
-				"fields/AbirootHTML/AbirootHTML.php"
+				"fields/AbirootHTML/AbirootHTML.php",
 			];
 			foreach ($fieldsPaths as $fieldPath) {
 				$this->registerField($fieldPath);
@@ -26,7 +26,9 @@ if (!class_exists('PROFITBakeryElements')) {
 
 			$elementsPaths = [
 				"elements/PROTestBlock/PROTestBlock.php",
+				"elements/PROTestimonials/PROTestimonials.php",
 			];
+
 			foreach ($elementsPaths as $elementPath) {
 				$this->registerShortCodeElement($elementPath);
 			}

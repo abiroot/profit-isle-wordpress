@@ -25,6 +25,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 body {
 	font-family: 'Poppins', sans-serif;
 	color: #ffffff;
+	color: black;
 	/*background-color: green;*/
 }
 

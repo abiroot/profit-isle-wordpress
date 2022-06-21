@@ -15,14 +15,14 @@ if (!class_exists('PROTestBlock')) {
 			vc_map(array(
 				'name' => __('PROTestBlock', 'profit-isle'),
 				'base' => 'pro_test_block',
-				'description' => __('', 'profit-isle'),
+				'description' => __('This is a cool block', 'profit-isle'),
 				'category' => __('Profit-isle Elements', 'profit-isle'),
 				'params' => array(
-					array(
-						'heading' => 'Text',
-						'type' => 'textfield',
-						'param_name' => 'button',
-					)
+                    array(
+                        'heading' => 'Text',
+                        'type' => 'textfield',
+                        'param_name' => 'button',
+                    ),
 				),
 			));
 		}

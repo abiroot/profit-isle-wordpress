@@ -1,0 +1,35 @@
+<!--section-5-->
+<div class="{{ animation_classes }} section-testimonials text-center py-5">
+    <h2>{{ section_title }}</h2>
+    <p class="white-paragraph bold-text">{{ section_sub_title }}</p>
+    <div class="container mt-5">
+        <div class="row justify-content-center align-items-center px-4 px-md-0">
+            <div class="col-md-2">
+                {% for key, testimonial in testimonials %}
+                    <div class="col-12 my-2 white-container {{ key == 0 ? '' : 'opacity-75' }}" data-section="{{ key }}" role='button'>
+                        <img class="w-75" src="{{  testimonial['testimonial_image'] }}" alt="">
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="col-md-9 text-center">
+                {% for key, testimonial in testimonials %}
+
+                    <!--text-1-->
+                    <div class="testimonial white-box-content px-5 py-5 mt-4 mt-md-0 position-relative {{ key == 0 ? 'active-section' : '' }}" data-section="{{ key }}">
+                        <div class="position-absolute top-0 start-0 p-md-3">
+                            <img class="quotes-img" src="./assets/quote icon.svg" alt="">
+                        </div>
+                        <p>{{ testimonial['testimonial_text'] }}</p>
+                        <p class="green-text">Michael Grandchamp</p>
+                        <p class="green-text">Vice President of Pricing & Analytics MRC. Global</p>
+                        <div class="position-absolute bottom-0 end-0 p-md-3">
+                            <img class="quotes-img" src="./assets/quote icon2.svg" alt="">
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</div>
