@@ -1,0 +1,29 @@
+.home-header-container {
+    background-image: url("../assets/LandingBanner.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 950px;
+    position: relative;
+}
+
+.home-header-container .landing-page-title {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+
+.home-header-container .white-color {
+    color: white;
+    text-decoration: none;
+}
+
+@media(max-width:900px) {
+    .home-header-container .navbar-brand {
+        width: 50%;
+    }
+    .home-header-container .landing-page-title {
+        position: absolute;
+        top: 36%;
+        left: 15%;
+    }
+}

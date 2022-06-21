@@ -1,0 +1,8 @@
+.section-footer {
+    background-image: linear-gradient(to right, #022B46, #44BA9C);
+}
+
+.section-footer .blue-container {
+    background-color: #022B46;
+    color: #ffffff;
+}
