@@ -1,0 +1,9 @@
+.section-benefit-image .benefit-img {
+    width: 50%;
+}
+
+@media (max-width:900px) {
+    .section-benefit-image .benefit-img {
+        width: 100%;
+    }
+}

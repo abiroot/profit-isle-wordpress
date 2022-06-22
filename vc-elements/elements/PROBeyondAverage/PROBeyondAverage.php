@@ -23,21 +23,26 @@ if (!class_exists('PROBeyondAverage')) {
                             'heading' => 'Beyond Average Title',
                             'type' => 'textfield',
                             'param_name' => 'beyond_average_title',
+                            'value' => '',
                         ],
                         [
                             'heading' => 'Beyond Average Paragraph',
-                            'type' => 'textarea',
-                            'param_name' => 'beyond_average_text',
+                            'type' => 'textarea_html',
+                            'param_name' => 'content',
+
+                            'value' => __( "<p>I am test text block. Click edit button to change this text.</p>", "my-text-domain" ),
                         ],
                         [
                             'heading' => 'Beyond Average Image',
                             'type' => 'attach_image',
                             'param_name' => 'beyond_average_image',
+                            'value' => '',
                         ],
                         [
                             'heading' => 'How It Works',
                             'type' => 'attach_image',
                             'param_name' => 'how_it_works',
+                            'value' => '',
                         ],
                     ],
                 ]
@@ -60,7 +65,7 @@ if (!class_exists('PROBeyondAverage')) {
             return $this->twigObj->render("pro_beyond_average.html.twig",
                 [
                     'beyond_average_title' => $atts['beyond_average_title'],
-                    'beyond_average_text' => $atts['beyond_average_text'],
+                    'beyond_average_text' => $content,
                     'beyond_average_image' => $beyondAverageImage,
                     'how_it_works' => $howItWorks,
                 ]

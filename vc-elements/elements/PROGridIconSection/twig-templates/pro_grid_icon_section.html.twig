@@ -1,0 +1,31 @@
+<div class="section-grid-icons container">
+    <div class="row mt-5 align-items-center">
+        <div class="col-md-6">
+            <div class="row justify-content-center">
+                {% for key, image in images %}
+{#                    <div class="col-12 my-2 white-container {{ key == 0 ? '' : 'opacity-75' }}" data-section="{{ key }}" role='button'>#}
+{#                        <img class="w-75" src="{{  testimonial['testimonial_image'] }}" alt="">#}
+{#                    </div>#}
+
+                    <div class="col-5 p-0 me-3 my-2 position-relative grid-images-container">
+                        <img class="w-100" src="{{ image['secondary_image'] }}" alt="">
+                        <div class="overlay position-absolute top-0 left-0 "></div>
+                        <div class="position-absolute top-50 start-50 translate-middle text-center  ">
+                            <img src="{{ image['secondary_svg'] }}" alt="">
+                            <h6 class="bold-800 mt-2">RETAIL</h6>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-md-6 mt-5 p-0 mt-md-0 position-relative grid-images-container">
+            <img class="w-100" src="{{ primary_image }}" alt="">
+            <div class="overlay position-absolute top-0 left-0 "></div>
+
+            <div class="position-absolute top-50 start-50 translate-middle text-center">
+                <img src="{{ primary_svg }}" alt="">
+                <h6 class="bold-800 mt-2">MANUFACTURING</h6>
+            </div>
+        </div>
+    </div>
+</div>

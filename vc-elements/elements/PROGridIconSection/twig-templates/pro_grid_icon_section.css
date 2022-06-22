@@ -1,0 +1,15 @@
+
+.section-grid-icons .overlay {
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #022B46;
+    background-size: contain;
+    border-radius: 27px;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+}
+
+.section-grid-icons .grid-images-container:hover .overlay {
+    opacity: 0.8;
+}
