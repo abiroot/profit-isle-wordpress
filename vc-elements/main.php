@@ -27,6 +27,8 @@ if (!class_exists('PROFITBakeryElements')) {
 			$elementsPaths = [
 				"elements/PROTestBlock/PROTestBlock.php",
 				"elements/PROTestimonials/PROTestimonials.php",
+				"elements/PROLinearGradient/PROLinearGradient.php",
+				"elements/PROBeyondAverage/PROBeyondAverage.php",
 			];
 
 			foreach ($elementsPaths as $elementPath) {
