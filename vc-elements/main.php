@@ -29,6 +29,7 @@ if (!class_exists('PROFITBakeryElements')) {
 				"elements/PROTestimonials/PROTestimonials.php",
 				"elements/PROLinearGradient/PROLinearGradient.php",
 				"elements/PROBeyondAverage/PROBeyondAverage.php",
+				"elements/PROTrustedBy/PROTrustedBy.php",
 			];
 
 			foreach ($elementsPaths as $elementPath) {
