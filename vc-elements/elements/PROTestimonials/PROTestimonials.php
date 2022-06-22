@@ -100,6 +100,7 @@ if (!class_exists('PROTestimonials')) {
 
             $testimonials = array_slice($testimonials, 0, 3);
 
+
             return $this->twigObj->render("pro_testimonials.html.twig", array(
                 "section_title" => $atts['section_title'],
                 "section_sub_title" => $atts['section_sub_title'],
