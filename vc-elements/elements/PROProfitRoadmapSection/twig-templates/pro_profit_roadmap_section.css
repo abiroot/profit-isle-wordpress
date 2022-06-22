@@ -1,0 +1,19 @@
+.section-profit-roadmap {
+    background-image: linear-gradient(to bottom, #022B46, #44BA9C);
+    height: 900px;
+}
+
+.section-profit-roadmap .green-text {
+    color: #44BA9C;
+    font-weight: bolder;
+}
+
+.section-profit-roadmap .position-text-3 {
+    position: absolute;
+    top: -100px;
+    left: 100px;
+}
+
+.section-profit-roadmap .underline-text {
+    border-bottom: 3px solid #44BA9C;
+}
