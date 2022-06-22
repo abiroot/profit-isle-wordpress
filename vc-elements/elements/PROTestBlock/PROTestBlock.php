@@ -38,7 +38,7 @@ if (!class_exists('PROTestBlock')) {
 
 
 			return $this->twigObj->render("pro_test_block.html.twig", array(
-                "button_text" => $atts['button'] ?? ""
+                "button_text" => $atts['button']
             ));
 		}
 	}

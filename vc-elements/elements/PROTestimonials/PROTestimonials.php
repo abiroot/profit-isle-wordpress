@@ -23,18 +23,21 @@ if (!class_exists('PROTestimonials')) {
                             'heading' => 'Title',
                             'type' => 'textfield',
                             'param_name' => 'section_title',
-                            'group' => 'General Info'
+                            'group' => 'General Info',
+                            'value' => '',
                         ],
                         [
                             'heading' => 'Sub-Title',
                             'type' => 'textfield',
                             'param_name' => 'section_sub_title',
-                            'group' => 'General Info'
+                            'group' => 'General Info',
+                            'value' => '',
                         ],
                         [
                             'group' => 'Testimonials',
                             'description' => 'Add up to 3 testimonials',
                             'type' => 'param_group',
+                            'value' => '',
                             'heading' => 'Testimonial List',
                             'param_name' => 'testimonial_list',
                             "max" => 3,
@@ -42,22 +45,26 @@ if (!class_exists('PROTestimonials')) {
                                 [
                                     'heading' => 'Testimonial Text',
                                     'type' => 'textarea',
-                                    'param_name' => 'testimonial_text'
+                                    'param_name' => 'testimonial_text',
+                                    'value' => '',
                                 ],
                                 [
                                     'heading' => 'Testimonial Image',
                                     'type' => 'attach_image',
-                                    'param_name' => 'testimonial_image'
+                                    'param_name' => 'testimonial_image',
+                                    'value' => '',
                                 ],
                                 [
                                     'heading' => 'Testimonial Author',
                                     'type' => 'textfield',
                                     'param_name' => 'testimonial_author',
+                                    'value' => '',
                                 ],
                                 [
                                     'heading' => 'Testimonial Job Position',
                                     'type' => 'textfield',
                                     'param_name' => 'testimonial_job_position',
+                                    'value' => '',
                                 ],
                             ]
                         ],
@@ -67,6 +74,7 @@ if (!class_exists('PROTestimonials')) {
                             'param_name' => 'animation',
                             'description' => __('Choose your animation style', 'text-domain'),
                             'group' => 'Animation',
+                            'value' => '',
                         ],
                     ],
                 ]
@@ -93,9 +101,9 @@ if (!class_exists('PROTestimonials')) {
             $testimonials = array_slice($testimonials, 0, 3);
 
             return $this->twigObj->render("pro_testimonials.html.twig", array(
-                "section_title" => $atts['section_title'] ?? "",
-                "section_sub_title" => $atts['section_sub_title'] ?? "",
-                "animation_classes" => $animation_classes ?? "",
+                "section_title" => $atts['section_title'],
+                "section_sub_title" => $atts['section_sub_title'],
+                "animation_classes" => $animation_classes,
                 "testimonials" => $testimonials
             ));
         }
