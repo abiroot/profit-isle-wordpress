@@ -22,6 +22,7 @@ if (!class_exists('PROTestBlock')) {
                         'heading' => 'Text',
                         'type' => 'textfield',
                         'param_name' => 'button',
+                        'value'=> ''
                     ),
 				),
 			));
