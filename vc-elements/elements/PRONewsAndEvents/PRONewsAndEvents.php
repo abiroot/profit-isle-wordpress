@@ -18,6 +18,11 @@ if (!class_exists('PRONewsAndEvents')) {
 				'description' => __('', 'profit-isle'),
 				'category' => __('Profit-isle Elements', 'profit-isle'),
 				'params' => array(
+                    array(
+                        'heading'=>'Main Title',
+                        'type'=> 'textfield',
+                        'param_name'=> 'main_title'
+                    ),
 					array(
                         'type'=> 'param_group',
                         'value'=>'',
@@ -71,7 +76,8 @@ if (!class_exists('PRONewsAndEvents')) {
             $news_events = array_slice($news_events, 0, 3);
 
 			return $this->twigObj->render("pro_news_and_events.html.twig", array(
-                "news_events_list" => $news_events
+                "news_events_list" => $news_events,
+                "main_title" => $atts['main_title']
             ));
 		}
 	}

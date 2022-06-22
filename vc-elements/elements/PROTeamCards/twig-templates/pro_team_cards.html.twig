@@ -1,0 +1,20 @@
+<div class="section-cards-collection container text-center pt-4">
+    <h2>{{ main_card_title }}</h2>
+        <div class="row mt-5 px-4 px-md-0 first-row">
+            {% for card in cards %}
+            <div class="col-md-4  mt-4 mt-mb-0">
+                <div class="card px-3 py-5 {{ card['green_card_checkbox']  ? 'middle-card' : '' }}">
+                    <div class="text-center {{ card['green_card_checkbox']  ? 'd-none' : '' }}">
+                        <img class="section-img" src="{{ card['card_image'] }}" alt="">
+
+                    </div>
+                    <h3 class="mt-4 {{ card['green_card_checkbox']  ? 'd-none' : '' }}">
+                        {{ card['card_title'] }}                    </h3>
+                    <h6 class="{{ card['green_card_checkbox']  ? 'd-none' : '' }}">{{ card['card_sub_title'] }}</h6>
+                    <p class="mt-3">{{ card['card_content'] }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+</div>
