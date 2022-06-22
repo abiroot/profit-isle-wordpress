@@ -34,6 +34,11 @@ if (!class_exists('PROBeyondAverage')) {
                             'type' => 'attach_image',
                             'param_name' => 'beyond_average_image',
                         ],
+                        [
+                            'heading' => 'How It Works',
+                            'type' => 'attach_image',
+                            'param_name' => 'how_it_works',
+                        ],
                     ],
                 ]
             );
@@ -50,12 +55,14 @@ if (!class_exists('PROBeyondAverage')) {
                 "/vc-elements/elements/PROBeyondAverage/twig-templates/pro_beyond_average.js", array('jquery'), '1.0', true);
 
             $beyondAverageImage = wp_get_attachment_image_src($atts['beyond_average_image'], 'full')[0];
+            $howItWorks = wp_get_attachment_image_src($atts['how_it_works'], 'full')[0];
 
             return $this->twigObj->render("pro_beyond_average.html.twig",
                 [
                     'beyond_average_title' => $atts['beyond_average_title'],
                     'beyond_average_text' => $atts['beyond_average_text'],
                     'beyond_average_image' => $beyondAverageImage,
+                    'how_it_works' => $howItWorks,
                 ]
             );
         }
