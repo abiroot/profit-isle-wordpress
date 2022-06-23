@@ -1,0 +1,12 @@
+.section-profit-books .blue-text {
+    color: #022B46;
+}
+
+.section-profit-books .relative-position {
+    position: relative;
+}
+
+.section-profit-books .absolute-text {
+    position: absolute;
+    bottom: 10%;
+}
