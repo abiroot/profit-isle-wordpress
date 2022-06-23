@@ -2,14 +2,14 @@
     <div class="container section-4">
         <div class="row my-5 px-3 px-md-0 container-position align-items-center">
             <div class="col-md-6">
-                <img class="w-100" src="./assets//magnifier.png" alt="">
-                <h2 class="text-position blue-text loop-text">Over <br> $100 <br>Billion</h2>
+                <img class="w-100" src="{{ stylesheet_directory_uri }}/assets//magnifier.png" alt="">
+                <h2 class="text-position blue-text loop-text">{{ loop_content|raw }}</h2>
             </div>
             <div class="col-md-6 mt-4 mt-md-0">
-                <h2 class="blue-text">In Client Revenue Analyzed</h2>
-                <p class="blue-text">Learn more about how Profit isle <br> has helped companies like yours.</p>
+                <h2 class="blue-text">{{ center_loop_title }}</h2>
+                <p class="blue-text">{{ center_loop_content }}</p>
                 <button class="btn btn-hover2 bold-800 py-2 px-3">
-                    Download our Case Studies
+                    {{ center_loop_button }}
                 </button>
             </div>
         </div>

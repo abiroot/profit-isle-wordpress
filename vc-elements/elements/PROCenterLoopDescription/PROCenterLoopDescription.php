@@ -19,11 +19,29 @@ if (!class_exists('PROCenterLoopDescription')) {
 				'category' => __('Profit-isle Elements', 'profit-isle'),
 				'params' => array(
 					array(
-						'heading' => 'Text',
-						'type' => 'textfield',
-						'param_name' => 'button',
+                        'heading'=>'Loop Content',
+                        'type'=>'textarea_html',
+                        'param_name'=>'content',
                         'value'=>''
-					)
+                    ),
+                    array(
+                        'heading'=>'Title',
+                        'type'=>'textarea',
+                        'param_name'=>'center_loop_title',
+                        'value'=>''
+                    ),
+                    array(
+                        'heading'=>'Sub Title Content',
+                        'type'=>'textfield',
+                        'param_name'=>'center_loop_content',
+                        'value'=>''
+                    ),
+                    array(
+                        'heading'=>'Button Content',
+                        'type'=>'textarea',
+                        'param_name'=>'center_loop_button',
+                        'value'=>''
+                    )
 				),
 			));
 		}
@@ -38,7 +56,12 @@ if (!class_exists('PROCenterLoopDescription')) {
 				"/vc-elements/elements/PROCenterLoopDescription/twig-templates/pro_center_loop_description.js", array('jquery'), '1.0', true);
 
 
-			return $this->twigObj->render("pro_center_loop_description.html.twig", array());
+			return $this->twigObj->render("pro_center_loop_description.html.twig", array(
+                "loop_content"=>$content,
+                "center_loop_title"=>$atts['center_loop_title'],
+                "center_loop_content"=>$atts['center_loop_content'],
+                "center_loop_button"=>$atts['center_loop_button']
+            ));
 		}
 	}
 }
