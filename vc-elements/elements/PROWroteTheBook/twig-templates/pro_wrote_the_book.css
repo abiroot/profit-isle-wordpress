@@ -1,0 +1,19 @@
+.section-wrote-the-book {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    color: #ffffff;
+}
+
+.section-wrote-the-book .padding-text {
+    padding-top: 230px;
+}
+
+.section-wrote-the-book .green-text {
+    color: #44BA9C;
+    font-weight: 800;
+}
+.second-book-margin{
+    margin-top: 140px;
+}
