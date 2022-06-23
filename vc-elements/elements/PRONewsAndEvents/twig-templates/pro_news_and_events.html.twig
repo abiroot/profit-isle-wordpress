@@ -1,0 +1,22 @@
+<div class="section-news-events py-5">
+    <div class="container">
+        <h2 class="text-center">{{main_title}}</h2>
+            <div class="row mt-5 px-4 px-md-0">
+                {% for NewsAndEvent in news_events_list %}
+
+                <div class="col-12 card py-3 mb-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-3 my-5 my-md-0 text-center">
+                            <img class="w-50" src="{{  NewsAndEvent['news_events_image'] }}" alt="">
+                        </div>
+                        <div class="col-md-8 px-4 px-md-0">
+                            <h4 class="bold-800">{{ NewsAndEvent['title_text'] }}</h4>
+                                <h6 class="bold-800">{{NewsAndEvent['sub_title_text'] }}</h6>
+                                <p>{{ NewsAndEvent['content_paragraph'] }}</p>
+                        </div>
+                    </div>
+                </div>
+                {%  endfor %}
+            </div>
+    </div>
+</div>

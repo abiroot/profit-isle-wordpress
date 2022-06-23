@@ -1,0 +1,37 @@
+.section-subscribe-box {
+    background-color: #022B46;
+    color: #ffffff;
+    width: 90%;
+    border-radius: 10px;
+    position: relative;
+    left: 5%;
+    top: -90px;
+}
+
+.section-subscribe-box .form-control:focus {
+    box-shadow: none;
+}
+
+.section-subscribe-box .form-control {
+    padding: 1.375rem .75rem;
+    border-top-left-radius: 40px;
+    width: 89%;
+    border-bottom-left-radius: 40px;
+}
+
+.section-subscribe-box .green-background {
+    background-color: #44BA9C;
+    padding: 1.45rem;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    cursor: pointer;
+}
+
+@media(max-width:900px) {
+    .section-subscribe-box .blue-container {
+        top: -54px;
+    }
+    .section-subscribe-box {
+        top: -52px
+    }
+}

@@ -1,0 +1,26 @@
+<div class="section-header-timeline container mt-0">
+    <h5 class="blue-text">{{ timeline_main_description }}</h5>
+</div>
+<div class="section-timeline container-fluid">
+    <div class="row">
+        <div id="timeline-container">
+            <div class="inner-container">
+                <h2 class="heading">Schedule</h2>
+                <ul class="timeline position-relative">
+                    <img class="position-absolute timeline-bg-img"
+                         src="{{ stylesheet_directory_uri }}/assets/timeline-BG.png" alt="">
+                    {% for timeline in timelines %}
+                        <li class="timeline-item" data-date="{{ timeline['section_date'] }}">
+                            {% for section_timeline in timeline['multiple_section_timeline'] %}
+                                <button class="accordion ">{{ section_timeline['section_title'] }}</button>
+                                <div class="panel">
+                                    <p class="timeline-paragraph">{{ section_timeline['section_content'] }}</p>
+                                </div>
+                            {% endfor %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

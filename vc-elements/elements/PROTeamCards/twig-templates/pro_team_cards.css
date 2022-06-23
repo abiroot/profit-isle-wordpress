@@ -1,0 +1,42 @@
+.section-cards-collection {
+    position: relative;
+    bottom: 350px;
+}
+
+.section-cards-collection .section-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.section-cards-collection h3 {
+    color: #022B46;
+    font-weight: 600;
+}
+
+.section-cards-collection h6 {
+    color: #44BA9C;
+}
+
+.section-cards-collection p {
+    color: #022B46;
+}
+
+.section-cards-collection .card {
+    border-radius: 20px;
+    min-height: 500px;
+}
+
+.section-cards-collection .middle-card {
+    background-color: #44BA9C;
+}
+
+.section-cards-collection .middle-card p {
+    color: #ffffff;
+}
+
+.section-cards-collection .card {
+    color: #022B46;
+    border-radius: 20px;
+    box-shadow: 0px 7px 11px -4px #888888;
+}
