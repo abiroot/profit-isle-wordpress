@@ -1,0 +1,35 @@
+.section-center-loop-description .blue-text {
+    color: #022B46;
+}
+
+.section-center-loop-description p {
+    color: #ffffff
+}
+.section-center-loop-description .container-position {
+    position: relative;
+}
+
+.section-center-loop-description .text-position {
+    position: absolute;
+    top: 23%;
+    left: 27%;
+}
+
+@media(max-width:900px) {
+    .section-center-loop-description .text-position {
+        top: 12%;
+        left: 53%;
+        font-size: 22px;
+    }
+}
+
+
+.section-center-loop-description .loop-text {
+    font-size: 4rem;
+}
+
+@media(max-width:900px) {
+    .section-center-loop-description .loop-text {
+        font-size: 2rem;
+    }
+}
