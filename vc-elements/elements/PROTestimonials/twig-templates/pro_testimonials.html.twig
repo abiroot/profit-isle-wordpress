@@ -14,17 +14,16 @@
 
             <div class="col-md-9 text-center">
                 {% for key, testimonial in testimonials %}
-
                     <!--text-1-->
                     <div class="testimonial white-box-content px-5 py-5 mt-4 mt-md-0 position-relative {{ key == 0 ? 'active-section' : '' }}" data-section="{{ key }}">
                         <div class="position-absolute top-0 start-0 p-md-3">
-                            <img class="quotes-img" src="./assets/quote icon.svg" alt="">
+                            <img class="quotes-img" src="{{ stylesheet_directory_uri }}/assets/quote_icon_left.svg" alt="">
                         </div>
                         <p>{{ testimonial['testimonial_text'] }}</p>
-                        <p class="green-text">{{ testimonial['testimonial_authtor'] }}</p>
-                        <p class="green-text">{{ testimonail['testimonial_job_position'] }}</p>
+                        <span class="author green-text">{{ testimonial['testimonial_author'] }}</span>
+                        <span class="job-position green-text">{{ testimonial['testimonial_job_position'] }}</span>
                         <div class="position-absolute bottom-0 end-0 p-md-3">
-                            <img class="quotes-img" src="./assets/quote icon2.svg" alt="">
+                            <img class="quotes-img" src="{{ stylesheet_directory_uri }}/assets/quote_icon_right.svg" alt="">
                         </div>
                     </div>
                 {% endfor %}

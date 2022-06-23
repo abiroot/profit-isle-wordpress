@@ -1,5 +1,4 @@
-<div class="section-beyond-average container-fluid" style="background-image: {{ stylesheet_directory_uri }}/assets/">
-    <img src="{{ stylesheet_directory_uri }}/assets/Beyond-Average-Background.jpg" alt="">
+<div class="section-beyond-average container-fluid" style="background-image: url({{ stylesheet_directory_uri }}/assets/Beyond-Average-Background.jpg)">
     <div class="container-fluid">
         <div class="row justify-content-between absolute-position align-items-center m-0">
             <div class="col-md-5">
@@ -7,7 +6,7 @@
             </div>
             <div class="col-md-6">
                 <h2 class="mt-5 mt-md-4">{{ beyond_average_title }}</h2>
-                <p class="bold-text mt-3"> {{ beyond_average_text }}</p>
+                <p class="bold-text mt-3"> {{ beyond_average_text|raw }}</p>
             </div>
             <div class="col-12 how-it-works">
                 <img class="absolute-position2 w-50" src="{{ how_it_works }}" alt="">

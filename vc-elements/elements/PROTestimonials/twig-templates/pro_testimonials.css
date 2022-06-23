@@ -11,6 +11,25 @@
     display: none;
 }
 
+
+.section-testimonials .testimonial p{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 30px;
+    font-size: 1.1em;
+}
+
+
+.section-testimonials .testimonial .author{
+    font-weight: bold;
+    display: block;
+}
+
+.section-testimonials .testimonial .job-position{
+    font-weight: bold;
+}
+
 .section-testimonials .testimonial.active-section {
     display: block;
 }
