@@ -51,9 +51,17 @@ if (!class_exists('PROWroteTheBook')) {
                     [
                         'type' => 'animation_style',
                         'heading' => __('Animation Style', 'text-domain'),
-                        'param_name' => 'animation',
+                        'param_name' => 'animation_one',
                         'description' => __('Choose your animation style', 'text-domain'),
-                        'group' => 'Animation',
+                        'group' => 'Animation Book 1',
+                        'value' => '',
+                    ],
+                    [
+                        'type' => 'animation_style',
+                        'heading' => __('Animation Style', 'text-domain'),
+                        'param_name' => 'animation_two',
+                        'description' => __('Choose your animation style', 'text-domain'),
+                        'group'=>'Animation Book 2',
                         'value' => '',
                     ],
 				),
@@ -68,8 +76,8 @@ if (!class_exists('PROWroteTheBook')) {
 
 			wp_enqueue_script('pro_wrote_the_book-script', get_template_directory_uri() .
 				"/vc-elements/elements/PROWroteTheBook/twig-templates/pro_wrote_the_book.js", array('jquery'), '1.0', true);
-            $animation_classes = $this->getCSSAnimation($atts['animation']);
-
+            $animation_classes_one = $this->getCSSAnimation($atts['animation_one']);
+            $animation_classes_two =$this->getCSSAnimation($atts['animation_two']);
 
 			return $this->twigObj->render("pro_wrote_the_book.html.twig", array(
                 "wrote_the_book_title"=>$atts['wrote_the_book_title'],
@@ -78,7 +86,8 @@ if (!class_exists('PROWroteTheBook')) {
                 "wrote_the_book_author"=>$atts['wrote_the_book_author'],
                 "wrote_the_book_content_two"=>$atts['wrote_the_book_content_two'],
                 "wrote_the_book_content_button"=>$atts['wrote_the_book_content_button'],
-                "animation_classes" => $animation_classes,
+                "animation_classes_one" => $animation_classes_one,
+                "animation_classes_two" => $animation_classes_two,
 
             ));
 		}
