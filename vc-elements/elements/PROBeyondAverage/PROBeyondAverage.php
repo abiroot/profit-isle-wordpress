@@ -44,6 +44,22 @@ if (!class_exists('PROBeyondAverage')) {
                             'param_name' => 'how_it_works',
                             'value' => '',
                         ],
+                        [
+                            'type' => 'animation_style',
+                            'heading' => __('Animation Style', 'text-domain'),
+                            'param_name' => 'animation_one',
+                            'description' => __('Choose your animation style', 'text-domain'),
+                            'group' => 'Animation 1',
+                            'value' => '',
+                        ],
+                        [
+                            'type' => 'animation_style',
+                            'heading' => __('Animation Style', 'text-domain'),
+                            'param_name' => 'animation_two',
+                            'description' => __('Choose your animation style', 'text-domain'),
+                            'group'=>'Animation 2',
+                            'value' => '',
+                        ],
                     ],
                 ]
             );
@@ -61,13 +77,16 @@ if (!class_exists('PROBeyondAverage')) {
 
             $beyondAverageImage = wp_get_attachment_image_src($atts['beyond_average_image'], 'full')[0];
             $howItWorks = wp_get_attachment_image_src($atts['how_it_works'], 'full')[0];
-
+            $animation_classes_one = $this->getCSSAnimation($atts['animation_one']);
+            $animation_classes_two =$this->getCSSAnimation($atts['animation_two']);
             return $this->twigObj->render("pro_beyond_average.html.twig",
                 [
                     'beyond_average_title' => $atts['beyond_average_title'],
                     'beyond_average_text' => $content,
                     'beyond_average_image' => $beyondAverageImage,
                     'how_it_works' => $howItWorks,
+                    "animation_classes_one"=>$animation_classes_one,
+                    "animation_classes_two"=>$animation_classes_two
                 ]
             );
         }

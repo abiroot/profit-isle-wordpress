@@ -30,6 +30,14 @@ if (!class_exists('PROMessyData')) {
                             'param_name' => 'messy_data_paragraph',
                             'value' => '',
                         ],
+                        [
+                            'type' => 'animation_style',
+                            'heading' => __('Animation Style', 'text-domain'),
+                            'param_name' => 'animation_one',
+                            'description' => __('Choose your animation style', 'text-domain'),
+                            'group' => 'Animation Messy Data',
+                            'value' => '',
+                        ],
                     ],
                 ],
             );
@@ -47,12 +55,14 @@ if (!class_exists('PROMessyData')) {
 
             wp_enqueue_script('pro_messy_data-script', get_template_directory_uri() .
                 "/vc-elements/elements/PROMessyData/twig-templates/pro_messy_data.js", array('jquery'), '1.0', true);
+            $animation_classes_one = $this->getCSSAnimation($atts['animation_one']);
 
             return $this->twigObj->render("pro_messy_data.html.twig",
                 [
                     "messy_data_title" => $atts['messy_data_title'],
                     "messy_data_paragraph" => $atts['messy_data_paragraph'],
-                ]
+                    "animation_classes_one"=>$animation_classes_one
+            ]
             );
         }
     }

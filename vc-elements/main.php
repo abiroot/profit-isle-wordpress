@@ -47,6 +47,7 @@ if (!class_exists('PROFITBakeryElements')) {
 				"elements/PROWideImageSection/PROWideImageSection.php",
 				"elements/PROWroteTheBook/PROWroteTheBook.php",
 				"elements/PROSectionUnearthLoop/PROSectionUnearthLoop.php",
+				"elements/PROTextMapSection/PROTextMapSection.php",
 			];
 
 			foreach ($elementsPaths as $elementPath) {
