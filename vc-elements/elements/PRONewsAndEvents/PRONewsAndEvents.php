@@ -54,7 +54,15 @@ if (!class_exists('PRONewsAndEvents')) {
                                 'value' => '',
                             )
                         )
-                    )
+                    ),
+                    [
+                        'type' => 'animation_style',
+                        'heading' => __('Animation Style', 'text-domain'),
+                        'param_name' => 'animation',
+                        'description' => __('Choose your animation style', 'text-domain'),
+                        'group' => 'Animation',
+                        'value' => '',
+                    ],
 				),
 			));
 		}
@@ -74,10 +82,13 @@ if (!class_exists('PRONewsAndEvents')) {
             }
 
             $news_events = array_slice($news_events, 0, 3);
+            $animation_classes = $this->getCSSAnimation($atts['animation']);
 
 			return $this->twigObj->render("pro_news_and_events.html.twig", array(
                 "news_events_list" => $news_events,
-                "main_title" => $atts['main_title']
+                "main_title" => $atts['main_title'],
+                "animation" => $animation_classes,
+
             ));
 		}
 	}
