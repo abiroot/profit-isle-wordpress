@@ -32,6 +32,14 @@ if (!class_exists('PROGridIconSection')) {
                             'value' => '',
                         ],
                         [
+                            'type' => 'animation_style',
+                            'heading' => __('Animation Style', 'text-domain'),
+                            'param_name' => 'animation_one',
+                            'description' => __('Choose your animation style', 'text-domain'),
+                            'group' => 'Animation',
+                            'value' => '',
+                        ],
+                        [
                             'group' => 'Secondary Images',
                             'description' => 'Add up to 4 images',
                             'type' => 'param_group',
@@ -58,14 +66,7 @@ if (!class_exists('PROGridIconSection')) {
                                     'param_name' => 'title',
                                     'value' => '',
                                 ],
-                                [
-                                    'type' => 'animation_style',
-                                    'heading' => __('Animation Style', 'text-domain'),
-                                    'param_name' => 'animation_one',
-                                    'description' => __('Choose your animation style', 'text-domain'),
-                                    'group' => 'Animation',
-                                    'value' => '',
-                                ],
+
                             ],
                         ],
                     ],
