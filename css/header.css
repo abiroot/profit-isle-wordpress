@@ -7,10 +7,10 @@
     position: relative;
 }
 
-/*rs-fullwidth-wrap{*/
-/*    margin-top: -90px !important;*/
-/*    z-index: -1;*/
-/*}*/
+rs-fullwidth-wrap{
+    /*margin-top: -90px !important;*/
+    z-index: -1;
+}
 
 .home-header-container .landing-page-title {
     position: absolute;
