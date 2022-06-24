@@ -7,7 +7,7 @@
     position: relative;
 }
 
-.rs-fullwidth-wrap:first-of-type{
+rs-fullwidth-wrap:first-of-type{
     margin-top: -90px !important;
     z-index: -1;
 }
