@@ -21,8 +21,12 @@ if (!class_exists('PROTeamCards')) {
                     array(
                         'heading'=>'Main Card Title',
                         'type'=>'textfield',
-                        'param_name'=>'main_card_title'
-                    ),
+                        'param_name'=>'main_card_title',
+                    ),[
+                        'heading'=>'Blue text CheckBox',
+                        'type'=>'checkbox',
+                        'param_name'=>'blue_text_checkbox'
+                    ],
 					array(
                         'group'=>'Card Content',
 						'heading' => 'Team Cards',
@@ -56,7 +60,15 @@ if (!class_exists('PROTeamCards')) {
                             )
 
                         )
-					)
+					),
+                    [
+                        'type' => 'animation_style',
+                        'heading' => __('Animation Style', 'text-domain'),
+                        'param_name' => 'animation',
+                        'description' => __('Choose your animation style', 'text-domain'),
+                        'group' => 'Animation',
+                        'value' => '',
+                    ],
 				),
 			));
 		}
@@ -76,11 +88,15 @@ if (!class_exists('PROTeamCards')) {
             }
 
 //            $cards = array_slice($cards, 0, 3);
+            $animation_classes = $this->getCSSAnimation($atts['animation']);
 
 
             return $this->twigObj->render("pro_team_cards.html.twig", array(
                 "cards"=>$cards,
-                "main_card_title"=> $atts['main_card_title']
+                "main_card_title"=> $atts['main_card_title'],
+                "blue_text_checkbox"=>$atts['blue_text_checkbox'],
+                "animation" => $animation_classes,
+
             ));
 		}
 	}

@@ -30,6 +30,12 @@ if (!class_exists('PROTextMapSection')) {
                             'param_name' => 'image',
                             'value' => '',
                         ],
+                        [
+                            'heading' => 'Cursor Image',
+                            'type' => 'attach_image',
+                            'param_name' => 'cursor_image',
+                            'value' => '',
+                        ],
                     ],
                 ],
             );
@@ -50,6 +56,7 @@ if (!class_exists('PROTextMapSection')) {
                 [
                     'text' => $atts['text'],
                     'image' => wp_get_attachment_image_src($atts['image'], 'full')[0],
+                    'cursor_image' => wp_get_attachment_image_src($atts['cursor_image'], 'full')[0],
                 ]
             );
         }
