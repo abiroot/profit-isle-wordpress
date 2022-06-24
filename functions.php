@@ -10,7 +10,7 @@
 
 if (!defined('_PRI_VERSION')) {
     // Replace the version number of the theme on each release.
-    define('_PRI_VERSION', '1.1.1');
+    define('_PRI_VERSION', '1.1.2');
 }
 
 /**
