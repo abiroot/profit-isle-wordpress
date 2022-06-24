@@ -58,6 +58,14 @@ if (!class_exists('PROGridIconSection')) {
                                     'param_name' => 'title',
                                     'value' => '',
                                 ],
+                                [
+                                    'type' => 'animation_style',
+                                    'heading' => __('Animation Style', 'text-domain'),
+                                    'param_name' => 'animation_one',
+                                    'description' => __('Choose your animation style', 'text-domain'),
+                                    'group' => 'Animation',
+                                    'value' => '',
+                                ],
                             ],
                         ],
                     ],
@@ -82,12 +90,15 @@ if (!class_exists('PROGridIconSection')) {
                 $images[$key]['secondary_svg'] = wp_get_attachment_image_src($image['secondary_svg'], 'full')[0];
             }
             $images = array_slice($images, 0, 4);
+            $animation_one = $this->getCSSAnimation($atts['animation_one']);
 
             return $this->twigObj->render("pro_grid_icon_section.html.twig",
                 [
                     'images' => $images,
                     'primary_image' => wp_get_attachment_image_src($atts['primary_image'], 'full')[0],
                     'primary_svg' => wp_get_attachment_image_src($atts['primary_svg'], 'full')[0],
+                    'animation_one' => $animation_one
+
                 ]
             );
         }

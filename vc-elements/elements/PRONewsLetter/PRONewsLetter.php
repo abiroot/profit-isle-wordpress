@@ -22,7 +22,15 @@ if (!class_exists('PRONewsLetter')) {
 						'heading' => 'Text',
 						'type' => 'textfield',
 						'param_name' => 'button',
-					)
+					),
+                    [
+                        'type' => 'animation_style',
+                        'heading' => __('Animation Style', 'text-domain'),
+                        'param_name' => 'animation_one',
+                        'description' => __('Choose your animation style', 'text-domain'),
+                        'group' => 'Animation',
+                        'value' => '',
+                    ],
 				),
 			));
 		}
@@ -36,8 +44,13 @@ if (!class_exists('PRONewsLetter')) {
 			wp_enqueue_script('pro_news_letter-script', get_template_directory_uri() .
 				"/vc-elements/elements/PRONewsLetter/twig-templates/pro_news_letter.js", array('jquery'), '1.0', true);
 
+            $animation_one = $this->getCSSAnimation($atts['animation_one']);
 
-			return $this->twigObj->render("pro_news_letter.html.twig", array());
+
+            return $this->twigObj->render("pro_news_letter.html.twig", array(
+                'animation_one' => $animation_one
+
+            ));
 		}
 	}
 }

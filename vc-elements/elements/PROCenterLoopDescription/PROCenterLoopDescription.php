@@ -41,7 +41,23 @@ if (!class_exists('PROCenterLoopDescription')) {
                         'type'=>'textarea',
                         'param_name'=>'center_loop_button',
                         'value'=>''
-                    )
+                    ),
+                    [
+                        'type' => 'animation_style',
+                        'heading' => __('Animation Style', 'text-domain'),
+                        'param_name' => 'animation_loop',
+                        'description' => __('Choose your animation style', 'text-domain'),
+                        'group' => 'Animation Loop',
+                        'value' => '',
+                    ],
+                    [
+                        'type' => 'animation_style',
+                        'heading' => __('Animation Style', 'text-domain'),
+                        'param_name' => 'animation_content',
+                        'description' => __('Choose your animation style', 'text-domain'),
+                        'group' => 'Animation Content',
+                        'value' => '',
+                    ],
 				),
 			));
 		}
@@ -55,12 +71,18 @@ if (!class_exists('PROCenterLoopDescription')) {
 			wp_enqueue_script('pro_center_loop_description-script', get_template_directory_uri() .
 				"/vc-elements/elements/PROCenterLoopDescription/twig-templates/pro_center_loop_description.js", array('jquery'), '1.0', true);
 
+            $animation_loop = $this->getCSSAnimation($atts['animation_loop']);
+            $animation_content = $this->getCSSAnimation($atts['animation_content']);
 
-			return $this->twigObj->render("pro_center_loop_description.html.twig", array(
+
+
+            return $this->twigObj->render("pro_center_loop_description.html.twig", array(
                 "loop_content"=>$content,
                 "center_loop_title"=>$atts['center_loop_title'],
                 "center_loop_content"=>$atts['center_loop_content'],
-                "center_loop_button"=>$atts['center_loop_button']
+                "center_loop_button"=>$atts['center_loop_button'],
+                "animation_loop"=>$animation_loop,
+                "animation_content"=>$animation_content
             ));
 		}
 	}
