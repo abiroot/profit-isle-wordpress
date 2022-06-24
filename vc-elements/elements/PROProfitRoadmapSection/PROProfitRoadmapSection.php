@@ -88,6 +88,14 @@ if (!class_exists('PROProfitRoadmapSection')) {
                             'value' => '',
                             'group' => 'Roadmap',
                         ],
+                        [
+                            'type' => 'animation_style',
+                            'heading' => __('Animation Style', 'text-domain'),
+                            'param_name' => 'animation',
+                            'description' => __('Choose your animation style', 'text-domain'),
+                            'group' => 'Animation',
+                            'value' => '',
+                        ],
                     ],
                 ]
             );
@@ -104,6 +112,7 @@ if (!class_exists('PROProfitRoadmapSection')) {
                 "/vc-elements/elements/PROProfitRoadmapSection/twig-templates/pro_profit_roadmap_section.js", array('jquery'), '1.0', true);
 
             $firstImage = wp_get_attachment_image_src($atts['roadmap_image'], 'full')[0];
+            $animation_classes = $this->getCSSAnimation($atts['animation']);
 
             return $this->twigObj->render("pro_profit_roadmap_section.html.twig",
                 [
@@ -117,6 +126,8 @@ if (!class_exists('PROProfitRoadmapSection')) {
                     'roadmap_third_title' => $atts['roadmap_third_title'],
                     'roadmap_third_text' => $atts['roadmap_third_text'],
                     'roadmap_fourth_text' => $atts['roadmap_fourth_text'],
+                    "animation" => $animation_classes,
+
                 ]
             );
         }
