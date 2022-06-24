@@ -60,16 +60,23 @@
                         <div class="col-12">
                             <div class="row">
                                 <div class="col-3">
-                                    <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/fb.svg" alt=""></a>
+                                    <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/fb.svg"
+                                                     alt=""></a>
                                 </div>
                                 <div class="col-3">
-                                    <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/linked in.svg" alt=""></a>
+                                    <a href="#"><img
+                                                src="<?php echo get_template_directory_uri() ?>/assets/linked in.svg"
+                                                alt=""></a>
                                 </div>
                                 <div class="col-3">
-                                    <a href="#"> <img src="<?php echo get_template_directory_uri() ?>/assets/twitter.svg" alt=""></a>
+                                    <a href="#"> <img
+                                                src="<?php echo get_template_directory_uri() ?>/assets/twitter.svg"
+                                                alt=""></a>
                                 </div>
                                 <div class="col-3">
-                                    <a href="#"> <img src="<?php echo get_template_directory_uri() ?>/assets/youtube.svg" alt="">
+                                    <a href="#"> <img
+                                                src="<?php echo get_template_directory_uri() ?>/assets/youtube.svg"
+                                                alt="">
                                     </a>
                                 </div>
                             </div>

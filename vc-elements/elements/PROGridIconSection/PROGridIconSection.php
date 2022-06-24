@@ -82,7 +82,6 @@ if (!class_exists('PROGridIconSection')) {
                 $images[$key]['secondary_svg'] = wp_get_attachment_image_src($image['secondary_svg'], 'full')[0];
             }
             $images = array_slice($images, 0, 4);
-            print_r($images);
 
             return $this->twigObj->render("pro_grid_icon_section.html.twig",
                 [
