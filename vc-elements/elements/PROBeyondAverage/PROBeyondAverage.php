@@ -49,7 +49,7 @@ if (!class_exists('PROBeyondAverage')) {
                             'heading' => __('Animation Style', 'text-domain'),
                             'param_name' => 'animation_one',
                             'description' => __('Choose your animation style', 'text-domain'),
-                            'group' => 'Animation Book 1',
+                            'group' => 'Animation 1',
                             'value' => '',
                         ],
                         [
@@ -57,7 +57,7 @@ if (!class_exists('PROBeyondAverage')) {
                             'heading' => __('Animation Style', 'text-domain'),
                             'param_name' => 'animation_two',
                             'description' => __('Choose your animation style', 'text-domain'),
-                            'group'=>'Animation Book 2',
+                            'group'=>'Animation 2',
                             'value' => '',
                         ],
                     ],
