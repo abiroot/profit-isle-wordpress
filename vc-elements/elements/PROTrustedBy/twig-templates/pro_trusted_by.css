@@ -5,9 +5,9 @@
 .section-trusted-by .blue-text {
     color: #022B46;
 }
-.hover-effect{
+.hover-effect-animation{
     transition: 0.5s ease;
 }
-.hover-effect:hover{
-    transform: translateY(-8px);
+.hover-effect-animation:hover{
+    transform: translateY(10px);
 }
