@@ -53,6 +53,11 @@ html {
     padding: 50px;
     opacity: 1;
 }
+@media(max-width: 900px){
+    .section-unearth-loop img{
+        width: 100%;
+    }
+}
 
 
 /*
