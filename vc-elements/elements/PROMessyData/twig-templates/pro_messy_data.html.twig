@@ -1,51 +1,48 @@
-<div class="section-messy-data container ">
-    <div class="card {{ animation_classes_one }}">
-        <div class="row justify-content-between pt-5 pb-5">
-            <div class="col-md-4 card-main">
-                <img class="w-100" src="{{ stylesheet_directory_uri }}/assets/magnifier.png" alt="">
+<div class="section-messy-data">
+    <div class="col-12 how-it-works {{ heading_image_animation }}">
+        <img class="heading-img" src="{{ heading_image_url }}" alt="">
+    </div>
+    <div class="container card {{ animation_classes_one }}">
 
-                <h2 class="card-position">{{ messy_data_title }}</h2>
-                <p class="mx-5 mt-5 bold-text">{{ messy_data_paragraph }}</p>
-            </div>
-            <div class="col-md-8 ">
-                <div class="chart-background me-md-3 py-3 mx-3 mx-md-0">
-                    <div class="container">
-                        <div class="row">
-                            <canvas height="100" width="400" id="horizontal"></canvas>
+        <div class="row pt-5 pb-5">
+            <div class="col-lg-6 col-md-12 center-slides px-md-5">
+                <div class="slider single-item text-slides">
+                    {% for text in text_slides %}
+                        <div>
+                            <h2 class="mb-5">{{ text.title }}</h2>
+                            <p class="bold-text ">{{ text.paragraph }}</p>
                         </div>
-                    </div>
-                    <div class="container">
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1 col-md-12 mt-5 mt-lg-0 px-md-5">
+                <div class="chart-background">
+                    <img class="magnifier-img d-none" src="{{ stylesheet_directory_uri }}/assets/magnifier.png" alt="">
 
-                        <div class="row justify-content-center">
-                            <div class="col-md-2 col-6">
+                    <div class="container ">
+
+                        <div class="row">
+                            <div class="col-12">
+                                <canvas height="100" width="400" id="horizontal"></canvas>
+                            </div>
+                            <div class="col-4">
                                 <canvas height="100" width="100" id="myChart"></canvas>
                             </div>
-                            <div class="col-md-2 col-6">
+                            <div class="col-4">
                                 <canvas height="100" width="100" id="myChart2"></canvas>
                             </div>
-                            <div class="col-md-2 col-6">
+                            <div class="col-4">
                                 <canvas height="100" width="100" id="myChart3"></canvas>
                             </div>
-                        </div>
-                    </div>
-                    <div class="container mt-4">
-                        <div class="row">
-                            <div class="col-6 col-md-3">
+                            <div class="col-6">
                                 <canvas height="50" width="50" id="vertical"></canvas>
-
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-6">
                                 <canvas height="50" width="50" id="vertical2"></canvas>
-
                             </div>
-                            <div class="col-6 col-md-3">
-                                <canvas height="50" width="50" id="vertical3"></canvas>
+                        </div>
+                        <div class="row d-md-none">
 
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <canvas height="50" width="50" id="vertical4"></canvas>
-
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,8 +1,18 @@
+jQuery(document).ready(function () {
+    jQuery('.text-slides').slick({
+        arrows: false,
+        centerMode: false,
+        dots: true,
+        autoplay: true,
+        slide: "div"
+    });
+});
+
 const ctx = document.getElementById('myChart');
 
-setInterval(function() {
+setInterval(function () {
     var value1 = Math.floor((Math.random() * 10) + 1);
-}, 1000);
+}, 3000);
 let value1 = 5
 let value2 = 10
 let value3 = 7
@@ -235,45 +245,44 @@ const vertical3 = new Chart(vrt3, {
     }
 
 });
-const vrt4 = document.getElementById('vertical4');
-
-const vertical4 = new Chart(vrt4, {
-    type: 'bar',
-    data: {
-        labels: ['', '', '', ''],
-        datasets: [{
-            data: [2, 5, 11, 5],
-            backgroundColor: [
-                '#44BA9C',
-            ],
-
-        }]
-    },
-    options: {
-        plugins: {
-            legend: {
-                display: false
-            }
-        },
-        scales: {
-            x: {
-                ticks: {
-                    display: false
-                },
-                grid: {
-                    display: false,
-
-                },
-            },
-            y: {
-                grid: {
-                    display: false,
-                },
-                ticks: {
-                    display: false
-                },
-            }
-        }
-    }
-
-});
+// const vrt4 = document.getElementById('vertical4');
+// const vertical4 = new Chart(vrt4, {
+//     type: 'bar',
+//     data: {
+//         labels: ['', '', '', ''],
+//         datasets: [{
+//             data: [2, 5, 11, 5],
+//             backgroundColor: [
+//                 '#44BA9C',
+//             ],
+//
+//         }]
+//     },
+//     options: {
+//         plugins: {
+//             legend: {
+//                 display: false
+//             }
+//         },
+//         scales: {
+//             x: {
+//                 ticks: {
+//                     display: false
+//                 },
+//                 grid: {
+//                     display: false,
+//
+//                 },
+//             },
+//             y: {
+//                 grid: {
+//                     display: false,
+//                 },
+//                 ticks: {
+//                     display: false
+//                 },
+//             }
+//         }
+//     }
+//
+// });

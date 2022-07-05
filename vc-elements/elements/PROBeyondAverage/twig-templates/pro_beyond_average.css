@@ -1,19 +1,22 @@
 .section-beyond-average {
-    /*background-image: url('./assets//Beyond\ Average\ Background.jpg');*/
-    height: 800px;
     background-position: center;
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
-}
-
-.section-beyond-average .absolute-position {
-    position: absolute;
-    top: 10%;
+    padding-top: 100px;
+    padding-bottom: 400px;
 }
 
 .section-beyond-average .how-it-works {
     margin-top: 5rem;
+}
+
+.section-beyond-average .left-img img{
+    max-width: 400px;
+}
+
+.section-beyond-average .how-it-works img{
+    max-width: 800px;
 }
 
 @media(max-width:900px) {

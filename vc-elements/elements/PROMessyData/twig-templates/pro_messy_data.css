@@ -1,6 +1,45 @@
+.section-messy-data .magnifier-img{
+    position: absolute;
+    left: -10%;
+    top: -10%;
+    width: 100%;
+}
+
+.section-messy-data .heading-img {
+    width: 90% !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
 .section-messy-data {
     position: relative;
-    top: -150px;
+    top: -250px;
+    margin-bottom: -150px;
+}
+
+.section-messy-data .center-slides{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.slick-dots li.slick-active button:before{
+    color: white !important;
+    font-size: 14px !important;
+}
+
+.slick-dots li button:before{
+    color: white !important;
+    font-size: 10px !important;
+}
+
+.section-messy-data .text-slides p{
+    text-align: justify;
 }
 
 .section-messy-data .chart-background {
@@ -13,24 +52,13 @@
     width: 100%;
 }
 
-.section-messy-data .card-main {
-    position: relative;
-}
 
-.section-messy-data .card-position {
-    position: absolute;
-    top: 23%;
-    left: 45%;
-}
+@media (max-width: 900px) {
 
-@media(max-width:900px) {
-    .section-messy-data .card-position {
-        top: 23%;
-        left: 48%;
-    }
     .section-messy-data .messy-data {
         top: -130px;
     }
+
     .section-messy-data .absolute-position2 {
         width: 80% !important;
     }

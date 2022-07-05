@@ -11,16 +11,16 @@ html {
 }
 
 .section-unearth-loop .scrollable-section {
-    overflow: auto;
-    scrollbar-width: none;
     height: 100vh;
-}
-
-.section-unearth-loop .scrollable-section {
+    scrollbar-width: none;
     -ms-overflow-style: none;
     /* Edge, Internet Explorer */
     scrollbar-width: none;
     /* Firefox */
+}
+
+.section-unearth-loop .scrollable-section.start-scroll{
+    overflow: auto;
     overflow-y: scroll;
 }
 

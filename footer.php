@@ -30,11 +30,11 @@
                         </div>
                         <div class="col-12 mb-2">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/phone.svg" alt="">
-                            <span><a href="#">Phone</a></span>
+                            <span><a href="tel:96170442737">Phone</a></span>
                         </div>
                         <div class="col-12 mb-2">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/mail.svg" alt="">
-                            <span><a href="#">Mail</a></span>
+                            <span><a href="mailto:ayman@abiroot.com">Mail</a></span>
                         </div>
                         <div class="col-12 mb-2">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/follow us.svg" alt="">
