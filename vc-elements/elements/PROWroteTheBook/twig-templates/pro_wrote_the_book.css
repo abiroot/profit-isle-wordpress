@@ -9,7 +9,11 @@
 .section-wrote-the-book .padding-text {
     padding-top: 230px;
 }
-
+@media(max-width: 900px){
+    .section-wrote-the-book .padding-text {
+        padding-top: 111px;
+    }
+}
 .section-wrote-the-book .green-text {
     color: #44BA9C;
     font-weight: 800;

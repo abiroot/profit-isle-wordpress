@@ -9,7 +9,12 @@
     width: 100%;
     padding: 30px;
 }
-
+@media(max-width: 900px){
+    .section-grid-icons .overlay .main-image{
+        width: 96%;
+        border-radius: 17px;
+    }
+}
 .section-grid-icons .grid-images-container:hover .overlay {
     opacity: 0.8;
 }

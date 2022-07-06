@@ -2,7 +2,11 @@
     background-image: linear-gradient(to bottom, #022B46, #44BA9C);
     height: 900px;
 }
-
+@media(max-width: 900px) {
+    .section-profit-roadmap {
+        height: fit-content;
+    }
+}
 .section-profit-roadmap .green-text {
     color: #44BA9C;
     font-weight: bolder;
