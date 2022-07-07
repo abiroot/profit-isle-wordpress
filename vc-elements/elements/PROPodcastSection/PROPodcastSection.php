@@ -39,7 +39,8 @@ if (!class_exists('PROPodcastSection')) {
                         'heading'=>'Series Title',
                         'value'=>'',
                         'param_name'=>'serie_title',
-                        'group'=>'Series'
+                        'group'=>'Series',
+                        'type'=>'textfield'
                     ],
                     array(
                         'type'=> 'param_group',
@@ -60,7 +61,8 @@ if (!class_exists('PROPodcastSection')) {
                         'heading'=>'Episode Title',
                         'value'=>'',
                         'param_name'=>'episode_title',
-                        'group'=>'Episodes'
+                        'group'=>'Episodes',
+                        'type'=>'textfield'
                     ],
                     array(
                         'type'=> 'param_group',
