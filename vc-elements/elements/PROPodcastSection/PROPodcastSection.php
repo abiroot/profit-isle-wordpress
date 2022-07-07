@@ -68,7 +68,7 @@ if (!class_exists('PROPodcastSection')) {
                         'type'=> 'param_group',
                         'value'=>'',
                         'group'=>'Episodes',
-                        'heading'=>'Podcast Episodes',
+                        'heading'=>'Episodes',
                         'param_name' =>'episodes',
                         'params'=>array(
                             array(
