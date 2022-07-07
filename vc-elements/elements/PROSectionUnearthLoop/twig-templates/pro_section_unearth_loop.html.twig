@@ -1,27 +1,35 @@
-<div class="section-unearth-loop" id="section-test"
-     style="background-image: url('{{ stylesheet_directory_uri }}/assets/Benefits\ background.jpg')">
-    <img src="{{ stylesheet_directory_uri }}/assets/magnifier.png" class="fixed-loop" alt="">
-    <div class="scrollable-section position-relative">
-        <div class="container">
-            <div class="row">
-                {% for key, element in loop_content %}
-                    <div class="col-md-12">
-                        <div class="benefits-text">
-                            <h2>{{ element['loop_title'] }}</h2>
-                            <p class="bold-text">{{ element['loop_description'] }}</p>
-                        </div>
-                    </div>
-                {% endfor %}
+<div class="parallax-section-unearth">
+    {% for key, element in loop_content %}
+        <div class="parallax-content">
+            <div class="parallax-box">
+                <h1>{{ element['loop_title'] }}</h1>
+                <p>{{ element['loop_description'] }}</p>
             </div>
-
         </div>
-    </div>
+    {% endfor %}
 </div>
-<style>
- @media(max-width: 900px){
-     .section-unearth-loop{
-         background-image: url("{{ stylesheet_directory_uri }}/assets/Bg-mobile-arrow.jpg") ;
 
-     }
- }
+<style>
+
+    #arrow-green{
+        width: 90%;
+        position: absolute;
+        z-index: 1;
+    }
+
+
+    .parallax-section-unearth {
+        position: relative;
+        background: url(http://profit-isle.test/wp-content/themes/profit-isle/assets/buildings-bg.jpg) no-repeat fixed center;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+
+        -moz-transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+
+
 </style>

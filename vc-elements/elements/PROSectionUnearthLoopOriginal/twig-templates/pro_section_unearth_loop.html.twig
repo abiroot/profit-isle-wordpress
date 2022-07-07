@@ -1,0 +1,26 @@
+<div class="section-unearth-loop" id="section-test"
+     style="background-image: url('{{ stylesheet_directory_uri }}/assets/Benefits\ background.jpg')">
+    <img src="{{ stylesheet_directory_uri }}/assets/magnifier.png" class="fixed-loop" alt="">
+    <div class="scrollable-section position-relative">
+        <div class="container">
+            <div class="row">
+                {% for key, element in loop_content %}
+                    <div class="col-md-12">
+                        <div class="benefits-text">
+                            <h2>{{ element['loop_title'] }}</h2>
+                            <p class="bold-text">{{ element['loop_description'] }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+</div>
+<style>
+ @media(max-width: 900px){
+     .section-unearth-loop{
+         background-image: url("{{ stylesheet_directory_uri }}/assets/Bg-mobile-arrow.jpg") ;
+     }
+ }
+</style>
