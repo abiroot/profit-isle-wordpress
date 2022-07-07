@@ -1,0 +1,11 @@
+.section-podcast-series {
+    background-color: #44BA9C;
+}
+
+.section-podcast-series .podcast-image {
+    height: 600px;
+}
+
+.section-podcast-series .custom-text {
+    font-size: 5rem;
+}
