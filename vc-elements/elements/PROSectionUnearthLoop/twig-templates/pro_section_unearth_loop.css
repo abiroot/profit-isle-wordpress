@@ -1,52 +1,94 @@
-
-.parallax-section-unearth {
-    padding-top: 100px;
-    height: 150vh;
-    /* Set a specific height */
-    min-height: 500px;
-    /* Create the parallax scrolling effect */
-    background-size: cover;
-    background-size: 100% 200%;
+html {
+    scroll-behavior: smooth;
 }
 
-.parallax-section-unearth{
-    -ms-overflow-style: none; /* Edge, Internet Explorer */
-    scrollbar-width: none; /* Firefox */
+.section-unearth-loop {
+    position: relative;
+    background-image: url("./assets/Benefits\ background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.section-unearth-loop .scrollable-section {
+    height: 100vh;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    /* Edge, Internet Explorer */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.section-unearth-loop .scrollable-section.start-scroll{
+    overflow: auto;
     overflow-y: scroll;
 }
-.parallax-section-unearth::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+
+.section-unearth-loop .scrollable-section::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
 }
 
-.parallax-section-unearth .parallax-content .parallax-box{
-    background-color: white;
-    box-shadow: 0 0 20px #333;
-    max-width: 600px;
-    margin: 20px 20px;
-    padding: 50px 25px;
-}
-
-.parallax-section-unearth .parallax-content {
-    z-index: 3;
-    color: black;
-    height: 80vh;
+.section-unearth-loop .benefits-text {
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    max-width: 320px;
 }
 
-.parallax-section-unearth p{
-    text-align: center;
-    font-size: 1rem;
-    color: #022b46;
+.section-unearth-loop .fixed-loop {
+    position: absolute;
+    width: 50%;
+    max-width: 600px;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
 }
 
-.parallax-section-unearth h1{
+.section-unearth-loop .fade {
+    margin: 50px;
+    padding: 50px;
+    opacity: 1;
+}
+@media(max-width: 900px){
+    .section-unearth-loop img{
+        width: 100% !important;
+    }
+}
+
+
+/*
+@media(max-width:900px) {
+    .section-unearth-loop .benefits-image {
+        height: 550px;
+    }
+}
+
+.section-unearth-loop .benefits-text {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 26%;
+}
+
+.section-unearth-loop .benefits-text h2 {
     font-size: 1.5rem;
-    font-weight: bolder;
-    text-align: center;
-    margin-bottom: 10px;
-    color: #022b46;
 }
 
+.section-unearth-loop .benefits-text p {
+    font-size: 0.9rem;
+}
+
+@media(max-width:900px) {
+    .section-unearth-loop .benefits-text {
+        top: 23%;
+    }
+    .section-unearth-loop .benefits-text h2 {
+        font-size: 16px;
+    }
+    .section-unearth-loop .benefits-text p {
+        font-size: 12px;
+    }
+} */
