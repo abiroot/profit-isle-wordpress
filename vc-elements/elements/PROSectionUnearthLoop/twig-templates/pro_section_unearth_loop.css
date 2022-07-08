@@ -62,6 +62,22 @@ html {
     .section-unearth-loop img{
         width: 100% !important;
     }
+    .section-unearth-loop .benefits-text {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 100px;
+        margin-left: 200px;
+    }
+    .section-unearth-loop .scrollable-section .benefits-text h2{
+        font-size: 1.3rem !important;
+    }
+    .section-unearth-loop .scrollable-section .benefits-text p{
+        font-size: 0.9rem !important;
+    }
 }
 
 
