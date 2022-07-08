@@ -8,10 +8,12 @@
             <div class="col-lg-6 col-md-12 center-slides px-md-5">
                 <div class="slider single-item text-slides">
                     {% for text in text_slides %}
-                        <div>
-                           <div class="d-flex flex-row">
-                               <h2 class="mb-5">{{ text.title }} </h2>
-                               <img class="image-next-to-title" src="{{ stylesheet_directory_uri }}/assets/magnifier.png" alt="">
+                        <div class="container-fluid">
+                           <div class="row mb-5">
+                               <h2 class="col-10">{{ text.title }} </h2>
+                               <div class="col-2">
+                                   <img class="w-100" src="{{ stylesheet_directory_uri }}/assets/magnifier.png" alt="">
+                               </div>
                            </div>
                             <p class="bold-text ">{{ text.paragraph }}</p>
                         </div>
