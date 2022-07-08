@@ -46,7 +46,7 @@ if (!class_exists('PROSectionUnearthLoop')) {
         {
             $this->initializeTwigTemplate();
             wp_enqueue_style('pro_section_unearth_loop-style', get_template_directory_uri() .
-                "/vc-elements/elements/PROSectionUnearthLoop/twig-templates/pro_section_unearth_loop.css", array(), '1.1');
+                "/vc-elements/elements/PROSectionUnearthLoop/twig-templates/pro_section_unearth_loop.css", array(), '1.2');
 
             wp_enqueue_script('pro_section_unearth_loop-script', get_template_directory_uri() .
                 "/vc-elements/elements/PROSectionUnearthLoop/twig-templates/pro_section_unearth_loop.js", array('jquery'), '1.0', true);
