@@ -9,10 +9,10 @@ html {
     background-position: center;
     background-size: cover;
 }
-.section-unearth-loop h2{
+.section-unearth-loop .scrollable-section .benefits-text h2{
     font-size: 1.7rem;
 }
-.section-unearth-loop p{
+.section-unearth-loop .scrollable-section .benefits-text p{
     font-size: 0.9rem;
 }
 .section-unearth-loop .scrollable-section {
