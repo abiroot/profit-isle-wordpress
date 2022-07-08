@@ -10,10 +10,10 @@ html {
     background-size: cover;
 }
 .section-unearth-loop .scrollable-section .benefits-text h2{
-    font-size: 1.7rem;
+    font-size: 1.7rem !important;
 }
 .section-unearth-loop .scrollable-section .benefits-text p{
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
 }
 .section-unearth-loop .scrollable-section {
     height: 100vh;
