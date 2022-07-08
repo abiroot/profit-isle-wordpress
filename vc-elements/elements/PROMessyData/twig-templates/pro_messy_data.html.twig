@@ -9,10 +9,10 @@
                 <div class="slider single-item text-slides">
                     {% for text in text_slides %}
                         <div class="container-fluid">
-                           <div class="row mb-5 align-items-center">
-                               <h2 class="col-10">{{ text.title }} </h2>
-                               <div class="col-2">
-                                   <img class="w-100" src="{{ stylesheet_directory_uri }}/assets/magnifier.png" alt="">
+                           <div class="position-relative">
+                               <h2>{{ text.title }} </h2>
+                               <div class="position-absolute bottom-0 start-50 translate-middle image-next-to-title">
+                                   <img class="w-100" src="{{ stylesheet_directory_uri }}/assets/magnifier.png" alt=""
                                </div>
                            </div>
                             <p class="bold-text ">{{ text.paragraph }}</p>
