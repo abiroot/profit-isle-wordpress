@@ -9,7 +9,12 @@ html {
     background-position: center;
     background-size: cover;
 }
-
+.section-unearth-loop h2{
+    font-size: 1.7rem;
+}
+.section-unearth-loop p{
+    font-size: 0.9rem;
+}
 .section-unearth-loop .scrollable-section {
     height: 100vh;
     scrollbar-width: none;
@@ -36,7 +41,7 @@ html {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start;
-    max-width: 320px;
+    max-width: 280px;
 }
 
 .section-unearth-loop .fixed-loop {
