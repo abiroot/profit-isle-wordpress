@@ -52,6 +52,9 @@
     width: 100%;
 }
 
+.section-messy-data .image-next-to-title{
+    width: 20px;
+}
 
 @media (max-width: 900px) {
 

@@ -9,7 +9,7 @@
                 <div class="slider single-item text-slides">
                     {% for text in text_slides %}
                         <div>
-                            <h2 class="mb-5">{{ text.title }}</h2>
+                            <h2 class="mb-5">{{ text.title }} <span class="image-next-to-title"><img src="{{ stylesheet_directory_uri }}/assets/magnifier.png" alt=""></span></h2>
                             <p class="bold-text ">{{ text.paragraph }}</p>
                         </div>
                     {% endfor %}
