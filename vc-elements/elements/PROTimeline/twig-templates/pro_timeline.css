@@ -1,10 +1,12 @@
 .section-header-timeline .blue-text {
     color: #022B46;
 }
+
 #timeline-container {
     overflow: auto;
     padding: 60px 0;
 }
+
 /* #timeline-container .inner-container {
     max-width: 1000px;
     margin: 0 auto;
@@ -81,9 +83,11 @@
         position: relative;
         left: 55px;
     }
+
     .section-timeline .timeline .timeline-item {
         font-size: 1.1rem;
     }
+
     .section-timeline .timeline .timeline-item::after {
         right: calc(var(--item-width) + 15px);
     }
@@ -93,6 +97,7 @@
     .section-timeline .timeline-item {
         padding: 1rem 1.5rem 1rem 0.5rem;
     }
+
     .section-timeline .timeline-item::after {
         right: calc(var(--item-width) + 20px);
     }
@@ -139,8 +144,45 @@
     text-align: left;
 }
 
-@media(max-width:900px) {
+@media (max-width: 900px) {
     .section-timeline .timeline .timeline-bg-img {
         max-width: 470px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+    .benefits-text {
+        margin-left: 70px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1299px) {
+    .benefits-text {
+        margin-left: 142px;
+    }
+}
+@media (min-width: 1300px) and (max-width: 1399px) {
+    .benefits-text {
+        margin-left: 120px;
+    }
+}
+@media (min-width: 1400px) and (max-width: 1499px) {
+    .benefits-text {
+        margin-left: 170px;
+    }
+}
+@media (min-width: 1500px) and (max-width: 1599px) {
+    .benefits-text {
+        margin-left: 150px;
+    }
+}
+@media (min-width: 1600px) and (max-width: 1699px) {
+    .benefits-text {
+        margin-left: 100px;
+    }
+}
+
+@media (min-width: 1700px) and (max-width: 1799px) {
+    .benefits-text {
+        margin-left: 50px;
     }
 }
