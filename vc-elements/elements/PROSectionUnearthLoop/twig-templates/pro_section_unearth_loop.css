@@ -80,6 +80,42 @@ html {
     }
 }
 
+@media (min-width: 1000px) and (max-width: 1199px) {
+    .section-unearth-loop .benefits-text {
+        margin-left: 70px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1299px) {
+    .section-unearth-loop .benefits-text {
+        margin-left: 142px;
+    }
+}
+@media (min-width: 1300px) and (max-width: 1399px) {
+    .section-unearth-loop  .benefits-text {
+        margin-left: 120px;
+    }
+}
+@media (min-width: 1400px) and (max-width: 1499px) {
+    .section-unearth-loop .benefits-text {
+        margin-left: 170px;
+    }
+}
+@media (min-width: 1500px) and (max-width: 1599px) {
+    .section-unearth-loop .benefits-text {
+        margin-left: 150px;
+    }
+}
+@media (min-width: 1600px) and (max-width: 1699px) {
+    .section-unearth-loop  .benefits-text {
+        margin-left: 100px;
+    }
+}
+
+@media (min-width: 1700px) and (max-width: 1799px) {
+    .section-unearth-loop  .benefits-text {
+        margin-left: 50px;
+    }
+}
 
 /*
 @media(max-width:900px) {
