@@ -4,6 +4,9 @@
         {% for card in cards %}
             <div class="col-md-4  mt-4 mt-mb-0 {{ animation }}">
                 <div class="card px-3 py-5 {{ card['green_card_checkbox'] == true  ? 'middle-card' : '' }}">
+                    <div class="text-center {{ card['green_card_checkbox'] == true ? 'd-block' : 'd-none' }}">
+                        <img src="{{ stylesheet_directory_uri }}/assets/quote-outline.svg" alt="">
+                    </div>
                     <div class="text-center {{ card['green_card_checkbox']  ? 'd-none' : '' }}">
                         <img class="section-img" src="{{ card['card_image'] }}" alt="">
 
